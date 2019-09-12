@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    {% macro displayMovieList(movie_list) %}
+
+    {% for movie in movie_list %}
+    <li>{{ movie.title}}</li>
+    {% endfor %}
+
+    {% endmacro %}
+</body>
+
+</html>
